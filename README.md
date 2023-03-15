@@ -5,7 +5,7 @@ This is a Streamlit app that helps users preprocess and clean CSV files quickly 
 # Web App
 Click [Here](https://huggingface.co/spaces/Kaludi/CSV-Data-Cleaning-Tool_App "Here") To View This App Online!
 
-![image](https://user-images.githubusercontent.com/63890666/224580639-2aeec181-e7ad-446a-af69-0d2bfea33dff.png)
+![image](https://user-images.githubusercontent.com/63890666/225219107-f4103446-4bf9-496b-bfe4-ba92737cf452.png)
 
 ## Features
 
