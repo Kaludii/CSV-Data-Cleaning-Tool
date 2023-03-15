@@ -1,0 +1,4 @@
+openai
+streamlit
+PyPDF2
+Pillow
