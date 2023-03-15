@@ -3,7 +3,15 @@ import pandas as pd
 import io
 import base64
 
-st.set_page_config(page_title="Data Cleaning Tool", layout="wide")
+st.set_page_config(page_title="Data Cleaning Tool")
+
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.title("CSV Data Cleaning Tool")
 
@@ -64,18 +72,10 @@ if uploaded_files:
             href = f'<a href="data:file/csv;base64,{b64}" download="cleaned_data_{i + 1}.csv">Download cleaned_data_{i + 1}.csv</a>'
             st.markdown(href, unsafe_allow_html=True)
 else:
-    st.warning("Please upload a CSV file.")
+    st.warning("Please upload CSV file(s).")
     st.stop()
 
 st.markdown("")
 st.markdown("---")
 st.markdown("")
 st.markdown("<p style='text-align: center'><a href='https://github.com/Kaludii'>Github</a> | <a href='https://huggingface.co/Kaludi'>HuggingFace</a></p>", unsafe_allow_html=True)
-
-hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
